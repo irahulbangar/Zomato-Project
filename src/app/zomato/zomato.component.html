@@ -1,0 +1,33 @@
+
+<h1>Zomato Problem</h1>
+
+Monday : <input type="number"
+    [ngClass]="{'danger' : mon<=0,'orange' : mon>=5 && mon<=10,'green' : mon>=11 && mon<=15,'purple': mon>15}"
+    [(ngModel)]="mon">*100={{montotal}}<br><br>
+Tuesday : <input type="number"
+    [ngClass]="{'danger' : tue<=0,'orange' : tue>=5 && tue<=10,'green' : tue>=11 && tue<=15,'purple': tue>15}"
+    [(ngModel)]="tue">*100={{tuetotal}}<br><br>
+Wednesday: <input type="number"
+    [ngClass]="{'danger' : wed<=0,'orange' : wed>=5 && wed<=10,'green' : wed>=11 && wed<=15,'purple': wed>15}"
+    [(ngModel)]="wed">*100={{wedtotal}}<br><br>
+Thursday : <input type="number"
+    [ngClass]="{'danger' : thu<=0,'orange' : thu>=5 && thu<=10,'green' : thu>=11 && thu<=15,'purple': thu>15}"
+    [(ngModel)]="thu">*100={{thutotal}}<br><br>
+Friday : <input type="number"
+    [ngClass]="{'danger' : fri<=0,'orange' : fri>=5 && fri<=10,'green' : fri>=11 && fri<=15,'purple': fri>15}"
+    [(ngModel)]="fri">*100={{fritotal}}<br><br>
+Saturday : <input type="number"
+    [ngClass]="{'danger' : sat<=0,'orange' : sat>=5 && sat<=10,'green' : sat>=11 && sat<=15,'purple': sat>15}"
+    [(ngModel)]="sat">*100={{sattotal}}<br><br>
+Sunday : <input type="number"
+    [ngClass]="{'danger' : sun<=0,'orange' : sun>=5 && sun<=10,'green' : sun>=11 && sun<=15,'purple': sun>15}"
+    [(ngModel)]="sun">*100={{suntotal}}<br>
+<br>
+<br>
+<button (click)="calc()">Calculate</button><br><br>
+
+Total Amount={{Total}} 
+<br>
+<br>
+
+Remarks : {{remark}}
